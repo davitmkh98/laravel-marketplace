@@ -6,7 +6,7 @@
 @forelse($orders as $order)
     <div class="mb-3 p-3 border rounded">
         <div>Order #{{ $order->id }}</div>
-        <div>Total: {{ $order->total }}</div>
+       <div>Total: ${{ number_format($order->total, 2) }}</div>
 
 
 <p>

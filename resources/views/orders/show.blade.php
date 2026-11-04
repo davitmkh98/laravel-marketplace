@@ -4,7 +4,7 @@
 <h1 class="mb-4">Order #{{ $order->id }}</h1>
 
 <p><strong>Status:</strong> {{ $order->status }}</p>
-<p><strong>Total:</strong> {{ $order->total }}</p>
+<p><strong>Total:</strong> ${{ number_format($order->total, 2) }}</p>
 
 <table class="table table-bordered">
     <thead>
@@ -19,9 +19,9 @@
         @foreach($order->items as $item)
             <tr>
                 <td>{{ $item->name }}</td>
-                <td>{{ $item->price }}</td>
+                <td>${{ number_format($item->price, 2) }}</td>
                 <td>{{ $item->quantity }}</td>
-                <td>{{ $item->subtotal }}</td>
+                <td>${{ number_format($item->subtotal, 2) }}</td>
             </tr>
         @endforeach
     </tbody>

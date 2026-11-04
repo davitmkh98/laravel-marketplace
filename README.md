@@ -2,6 +2,12 @@
 
 A full-stack e-commerce marketplace built with Laravel, where buyers can browse products, manage a cart, place orders, leave reviews, and manage wishlists. Sellers can manage their products and update order statuses.
 
+## Demo
+
+This project demonstrates a complete buyer and seller marketplace workflow, including product management, cart and checkout, order management, reviews, wishlists, stock management, and role-based authorization.
+
+A payment gateway is not currently integrated.
+
 ## Features
 
 ### Buyer Features

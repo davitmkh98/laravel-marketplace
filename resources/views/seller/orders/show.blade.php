@@ -47,9 +47,11 @@
         </tbody>
     </table>
 
-    <h4>
-        Total: ${{ number_format($order->total, 2) }}
-    </h4>
+<h4>
+    Total: ${{ number_format($order->total, 2) }}
+</h4>
+
+
 
     <hr>
 

@@ -6,9 +6,7 @@
     <div class="alert alert-success">{{ session('success') }}</div>
 @endif
 
-@if(session('error'))
-    <div class="alert alert-danger">{{ session('error') }}</div>
-@endif
+
 
 @if($errors->has('cart'))
     <div class="alert alert-danger">{{ $errors->first('cart') }}</div>
@@ -65,9 +63,8 @@
 
 <form action="{{ route('checkout.store') }}" method="POST" class="mt-3">
     @csrf
-
     <button type="submit" class="btn btn-primary">
-        Checkout
+        Place Order (Demo — No Payment)
     </button>
 </form>
 @endsection

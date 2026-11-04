@@ -18,6 +18,8 @@ protected $fillable = [
     'user_id',
     'total',
     'status',
+    'commission',
+    'seller_amount',
 ];
 
     public function items()
